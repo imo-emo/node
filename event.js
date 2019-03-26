@@ -1,5 +1,5 @@
-const eventEmitter = require("events").EventEmitter;
-const event = new eventEmitter();
+// const eventEmitter = require("events").EventEmitter;
+// const event = new eventEmitter();
 //1. on 定义监听事件
 //2. emit触发监听事件
 //3. addListener 添加监听事件
@@ -15,4 +15,18 @@ const event = new eventEmitter();
 //     i++;
 //     event.emit("someEvent",i);
 // },1000)
-// error
+
+//eventEmitter 触发事件，事件监听
+// const eventEmitter = require("events").EventEmitter;
+// const event = new eventEmitter();
+// event.on("todo",(arg)=>{
+//     console.log('触发',arg);
+// })
+// event.addListener("todo",(arg)=>{
+//     console.log("监听",arg);
+// })
+// let i = 0;
+// setInterval(()=>{
+//     i++;
+//     event.emit('todo',i);
+// },1000)
